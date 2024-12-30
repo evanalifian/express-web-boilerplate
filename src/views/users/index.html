@@ -1,0 +1,14 @@
+<%- include('../header.html') %>
+<main>
+  <div class="w-full max-w-xl mx-auto px-4">
+    <section class="py-8 space-y-4">
+      <h1 class="text-2xl font-semibold">Users</h1>
+      <ul class="list-inside list-decimal font-mono space-y-1">
+        <% users.forEach(user => { %>
+          <li><%= user.name %></li>
+        <% }) %>
+      </ul>
+    </section>
+  </div>
+</main>
+<%- include('../footer.html') %>

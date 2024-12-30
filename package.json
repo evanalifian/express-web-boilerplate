@@ -1,0 +1,32 @@
+{
+  "name": "express-web-boilerplate",
+  "version": "1.0.0",
+  "description": "express web boilerplate",
+  "main": "./src/web.js",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"nodemon ./src/web.js\" \"npx tailwindcss -i ./src/views/style.css -o ./public/css/styles.css --watch\"",
+    "start": "nodemon ./src/web.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Node.js",
+    "Express.js",
+    "Web",
+    "App",
+    "Server"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.1",
+    "nodemon": "^3.1.9",
+    "tailwindcss": "^3.4.17"
+  }
+}
