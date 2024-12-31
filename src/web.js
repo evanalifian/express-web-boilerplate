@@ -1,16 +1,12 @@
 import { app } from "./app.js"
-import { route } from "./routes/users-route.js"
+import { homeRoute } from "./routes/index.route.js"
+import { usersRoute } from "./routes/users-route.js"
 
 const port = 3000
 
-app.get("/", (req, res) => {
-  res.render("index", {
-    title: "Express web app."
-  })
-})
-
-app.use("/users", route)
+app.use("/", homeRoute)
+app.use("/users", usersRoute)
 
 app.listen(port, () => {
-  console.log(`App is running on https://localost:${port}`)
+  console.log(`App is running on http://localhost:${port}/`)
 })
