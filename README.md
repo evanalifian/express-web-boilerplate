@@ -23,10 +23,16 @@ On devDepedencies includes :
 Let's getting starter with this template.
 
 ```bash
-git clone https://github.com/evanalifian/express-web-boilerplate.git
+git clone https://github.com/evanalifian/express-web-boilerplate.git project-name
 ```
 
-After you clone this repo, then run your project locally.
+After you clone this repo, you need install all the depedencies.
+
+```bash
+npm run install
+```
+
+After that, run your project locally.
 
 ```bash
 npm run dev
