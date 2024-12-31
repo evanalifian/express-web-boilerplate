@@ -1,15 +1,6 @@
 import express from "express"
+import { GET } from "../controllers/users-controller.js"
 
 export const usersRoute = express.Router()
 
-let users
-fetch("https://jsonplaceholder.typicode.com/users")
-  .then(values => values.json())
-  .then(values => users = values)
-
-usersRoute.get("/", (req, res) => {
-  res.render("users/index.html", {
-    title: "Users",
-    users
-  })
-})
+usersRoute.get("/", GET)
