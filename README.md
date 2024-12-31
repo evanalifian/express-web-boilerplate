@@ -26,7 +26,7 @@ Let's getting starter with this template.
 git clone https://github.com/evanalifian/express-web-boilerplate.git project-name
 ```
 
-After you clone this repo, you need install all the depedencies.
+After you clone this repo, you need to install all the depedencies.
 
 ```bash
 npm run install
