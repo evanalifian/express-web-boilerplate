@@ -29,7 +29,7 @@ git clone https://github.com/evanalifian/express-web-boilerplate.git project-nam
 After you clone this repo, you need to install all the depedencies.
 
 ```bash
-npm run install
+npm install
 ```
 
 After that, run your project locally.
